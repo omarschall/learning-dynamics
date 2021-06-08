@@ -6,7 +6,7 @@
 #SBATCH --mem=16GB
 #SBATCH --time=24:00:00
 #SBATCH --job-name=jupyter
-#SBATCH --output=/home/oem214/jupyter_notebook/jupyter.o
+#SBATCH --output=/scratch/oem214/learning-dynamics/jupyter_notebook/jupyter.o
 
 unset XDG_RUNTIME_DIR
 if [ "$SLURM_JOBTMP" != "" ]; then
