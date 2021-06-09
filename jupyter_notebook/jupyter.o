@@ -1,12 +1,12 @@
 
-Jupyter server is running on: cm06.nyu.cluster
-Job starts at: Tue Jun  8 18:20:14 EDT 2021
+Jupyter server is running on: cm03.nyu.cluster
+Job starts at: Wed Jun  9 16:05:44 EDT 2021
 
 Step 1 :
 
 If you are working in NYU campus, please open an iTerm window, run command
 
-ssh -L 11906:localhost:11906 oem214@greene.hpc.nyu.edu
+ssh -L 42634:localhost:42634 oem214@greene.hpc.nyu.edu
 
 If you are working off campus, you should already have ssh tunneling setup through HPC bastion host, 
 that you can directly login to greene with command
@@ -15,35 +15,49 @@ ssh oem214@greene
 
 Please open an iTerm window, run command
 
-ssh -L 11906:localhost:11906 oem214@greene
+ssh -L 42634:localhost:42634 oem214@greene
 
 Step 2:
 
 Keep the iTerm windows in the previouse step open. Now open browser, find the line with
 
-The Jupyter Notebook is running at: cm06.nyu.cluster
+The Jupyter Notebook is running at: cm03.nyu.cluster
 
-the URL is something: http://localhost:11906/?token=XXXXXXXX (see your token below)
+the URL is something: http://localhost:42634/?token=XXXXXXXX (see your token below)
 
 you should be able to connect to jupyter notebook running remotly on greene compute node with above url
 
 INFO:    Could not find any nv files on this host!
-[I 18:20:21.294 NotebookApp] Serving notebooks from local directory: /scratch/oem214/learning-dynamics/notebooks
-[I 18:20:21.295 NotebookApp] Jupyter Notebook 6.4.0 is running at:
-[I 18:20:21.295 NotebookApp] http://localhost:11906/?token=efeb48bd6447b17e5ddc8572a493d113b53209706dc0336a
-[I 18:20:21.295 NotebookApp]  or http://127.0.0.1:11906/?token=efeb48bd6447b17e5ddc8572a493d113b53209706dc0336a
-[I 18:20:21.295 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 18:20:21.316 NotebookApp] 
+[I 16:05:50.874 NotebookApp] Serving notebooks from local directory: /scratch/oem214/learning-dynamics/notebooks
+[I 16:05:50.875 NotebookApp] Jupyter Notebook 6.4.0 is running at:
+[I 16:05:50.875 NotebookApp] http://localhost:42634/?token=fb13665ca2b94d826322fc1be987c7ba7ad9f4a12d31c18a
+[I 16:05:50.875 NotebookApp]  or http://127.0.0.1:42634/?token=fb13665ca2b94d826322fc1be987c7ba7ad9f4a12d31c18a
+[I 16:05:50.875 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 16:05:50.883 NotebookApp] 
     
     To access the notebook, open this file in a browser:
-        file:///home/oem214/.local/share/jupyter/runtime/nbserver-1810507-open.html
+        file:///home/oem214/.local/share/jupyter/runtime/nbserver-3701745-open.html
     Or copy and paste one of these URLs:
-        http://localhost:11906/?token=efeb48bd6447b17e5ddc8572a493d113b53209706dc0336a
-     or http://127.0.0.1:11906/?token=efeb48bd6447b17e5ddc8572a493d113b53209706dc0336a
-[I 18:20:31.354 NotebookApp] 302 GET /?token=efeb48bd6447b17e5ddc8572a493d113b53209706dc0336a%0A (127.0.0.1) 0.620000ms
-[W 18:20:36.775 NotebookApp] Notebook pipeline_test.ipynb is not trusted
-[I 18:20:37.057 NotebookApp] Kernel started: cd7f781c-e59e-4774-ba93-26cc8f320243, name: python3
-[I 18:20:53.982 NotebookApp] Saving file at /pipeline_test.ipynb
-[I 18:21:48.791 NotebookApp] Saving file at /pipeline_test.ipynb
-[I 18:22:36.188 NotebookApp] Saving file at /pipeline_test.ipynb
-[I 18:22:37.002 NotebookApp] Saving file at /pipeline_test.ipynb
+        http://localhost:42634/?token=fb13665ca2b94d826322fc1be987c7ba7ad9f4a12d31c18a
+     or http://127.0.0.1:42634/?token=fb13665ca2b94d826322fc1be987c7ba7ad9f4a12d31c18a
+[I 16:05:58.797 NotebookApp] 302 GET /?token=fb13665ca2b94d826322fc1be987c7ba7ad9f4a12d31c18a%0A (127.0.0.1) 0.610000ms
+[W 16:05:59.154 NotebookApp] 404 GET /apple-touch-icon-precomposed.png (127.0.0.1) 5.030000ms referer=None
+[W 16:05:59.162 NotebookApp] 404 GET /apple-touch-icon.png (127.0.0.1) 0.810000ms referer=None
+[W 16:06:04.298 NotebookApp] Notebook pipeline_test.ipynb is not trusted
+[I 16:06:04.618 NotebookApp] Kernel started: 6adcea6d-aae1-442e-88dc-79ef925e4518, name: python3
+[I 16:10:04.577 NotebookApp] Saving file at /pipeline_test.ipynb
+[W 16:10:04.577 NotebookApp] Notebook pipeline_test.ipynb is not trusted
+[I 16:16:04.575 NotebookApp] Saving file at /pipeline_test.ipynb
+[W 16:16:04.575 NotebookApp] Notebook pipeline_test.ipynb is not trusted
+[I 16:18:04.577 NotebookApp] Saving file at /pipeline_test.ipynb
+[W 16:18:04.577 NotebookApp] Notebook pipeline_test.ipynb is not trusted
+[I 16:20:04.583 NotebookApp] Saving file at /pipeline_test.ipynb
+[W 16:20:04.583 NotebookApp] Notebook pipeline_test.ipynb is not trusted
+[I 16:22:04.582 NotebookApp] Saving file at /pipeline_test.ipynb
+[W 16:22:04.582 NotebookApp] Notebook pipeline_test.ipynb is not trusted
+[I 16:26:05.129 NotebookApp] Saving file at /pipeline_test.ipynb
+[W 16:26:05.129 NotebookApp] Notebook pipeline_test.ipynb is not trusted
+[I 16:48:31.424 NotebookApp] Saving file at /pipeline_test.ipynb
+[W 16:48:31.425 NotebookApp] Notebook pipeline_test.ipynb is not trusted
+[I 16:54:31.501 NotebookApp] Saving file at /pipeline_test.ipynb
+[W 16:54:31.501 NotebookApp] Notebook pipeline_test.ipynb is not trusted
