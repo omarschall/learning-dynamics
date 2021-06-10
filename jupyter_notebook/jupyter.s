@@ -54,7 +54,9 @@ you should be able to connect to jupyter notebook running remotly on greene comp
 EOF
 
 cd /scratch/oem214/learning-dynamics/notebooks/
-singularity exec --nv --overlay /scratch/oem214/vanilla-rtrl/pytorch1.7.0-cuda11.0.ext3:ro \
+source /scratch/work/public/singularity/greene-ib-slurm-bind.sh
+singularity exec --bind /home/oem214/passwd:/etc/passwd:ro --nv \
+--overlay /home/oem214/pytorch1.7.0-cuda11.0.ext3:ro \
 /scratch/work/public/singularity/cuda11.0-cudnn8-devel-ubuntu18.04.sif \
 bash -c "source /ext3/env.sh; jupyter notebook --no-browser --port $port --notebook-dir=$(pwd); exit"
 
