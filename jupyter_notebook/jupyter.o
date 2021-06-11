@@ -1,12 +1,12 @@
 
-Jupyter server is running on: cm03.nyu.cluster
-Job starts at: Wed Jun  9 16:05:44 EDT 2021
+Jupyter server is running on: cm01.nyu.cluster
+Job starts at: Fri Jun 11 10:30:55 EDT 2021
 
 Step 1 :
 
 If you are working in NYU campus, please open an iTerm window, run command
 
-ssh -L 42634:localhost:42634 oem214@greene.hpc.nyu.edu
+ssh -L 40050:localhost:40050 oem214@greene.hpc.nyu.edu
 
 If you are working off campus, you should already have ssh tunneling setup through HPC bastion host, 
 that you can directly login to greene with command
@@ -15,49 +15,354 @@ ssh oem214@greene
 
 Please open an iTerm window, run command
 
-ssh -L 42634:localhost:42634 oem214@greene
+ssh -L 40050:localhost:40050 oem214@greene
 
 Step 2:
 
 Keep the iTerm windows in the previouse step open. Now open browser, find the line with
 
-The Jupyter Notebook is running at: cm03.nyu.cluster
+The Jupyter Notebook is running at: cm01.nyu.cluster
 
-the URL is something: http://localhost:42634/?token=XXXXXXXX (see your token below)
+the URL is something: http://localhost:40050/?token=XXXXXXXX (see your token below)
 
 you should be able to connect to jupyter notebook running remotly on greene compute node with above url
 
 INFO:    Could not find any nv files on this host!
-[I 16:05:50.874 NotebookApp] Serving notebooks from local directory: /scratch/oem214/learning-dynamics/notebooks
-[I 16:05:50.875 NotebookApp] Jupyter Notebook 6.4.0 is running at:
-[I 16:05:50.875 NotebookApp] http://localhost:42634/?token=fb13665ca2b94d826322fc1be987c7ba7ad9f4a12d31c18a
-[I 16:05:50.875 NotebookApp]  or http://127.0.0.1:42634/?token=fb13665ca2b94d826322fc1be987c7ba7ad9f4a12d31c18a
-[I 16:05:50.875 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 16:05:50.883 NotebookApp] 
+[I 10:31:02.253 NotebookApp] Serving notebooks from local directory: /scratch/oem214/learning-dynamics/notebooks
+[I 10:31:02.255 NotebookApp] Jupyter Notebook 6.4.0 is running at:
+[I 10:31:02.255 NotebookApp] http://localhost:40050/?token=980eb2c89f738371926b5e95ef062600b2e908892c39ece1
+[I 10:31:02.255 NotebookApp]  or http://127.0.0.1:40050/?token=980eb2c89f738371926b5e95ef062600b2e908892c39ece1
+[I 10:31:02.255 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 10:31:02.595 NotebookApp] 
     
     To access the notebook, open this file in a browser:
-        file:///home/oem214/.local/share/jupyter/runtime/nbserver-3701745-open.html
+        file:///home/oem214/.local/share/jupyter/runtime/nbserver-2632190-open.html
     Or copy and paste one of these URLs:
-        http://localhost:42634/?token=fb13665ca2b94d826322fc1be987c7ba7ad9f4a12d31c18a
-     or http://127.0.0.1:42634/?token=fb13665ca2b94d826322fc1be987c7ba7ad9f4a12d31c18a
-[I 16:05:58.797 NotebookApp] 302 GET /?token=fb13665ca2b94d826322fc1be987c7ba7ad9f4a12d31c18a%0A (127.0.0.1) 0.610000ms
-[W 16:05:59.154 NotebookApp] 404 GET /apple-touch-icon-precomposed.png (127.0.0.1) 5.030000ms referer=None
-[W 16:05:59.162 NotebookApp] 404 GET /apple-touch-icon.png (127.0.0.1) 0.810000ms referer=None
-[W 16:06:04.298 NotebookApp] Notebook pipeline_test.ipynb is not trusted
-[I 16:06:04.618 NotebookApp] Kernel started: 6adcea6d-aae1-442e-88dc-79ef925e4518, name: python3
-[I 16:10:04.577 NotebookApp] Saving file at /pipeline_test.ipynb
-[W 16:10:04.577 NotebookApp] Notebook pipeline_test.ipynb is not trusted
-[I 16:16:04.575 NotebookApp] Saving file at /pipeline_test.ipynb
-[W 16:16:04.575 NotebookApp] Notebook pipeline_test.ipynb is not trusted
-[I 16:18:04.577 NotebookApp] Saving file at /pipeline_test.ipynb
-[W 16:18:04.577 NotebookApp] Notebook pipeline_test.ipynb is not trusted
-[I 16:20:04.583 NotebookApp] Saving file at /pipeline_test.ipynb
-[W 16:20:04.583 NotebookApp] Notebook pipeline_test.ipynb is not trusted
-[I 16:22:04.582 NotebookApp] Saving file at /pipeline_test.ipynb
-[W 16:22:04.582 NotebookApp] Notebook pipeline_test.ipynb is not trusted
-[I 16:26:05.129 NotebookApp] Saving file at /pipeline_test.ipynb
-[W 16:26:05.129 NotebookApp] Notebook pipeline_test.ipynb is not trusted
-[I 16:48:31.424 NotebookApp] Saving file at /pipeline_test.ipynb
-[W 16:48:31.425 NotebookApp] Notebook pipeline_test.ipynb is not trusted
-[I 16:54:31.501 NotebookApp] Saving file at /pipeline_test.ipynb
-[W 16:54:31.501 NotebookApp] Notebook pipeline_test.ipynb is not trusted
+        http://localhost:40050/?token=980eb2c89f738371926b5e95ef062600b2e908892c39ece1
+     or http://127.0.0.1:40050/?token=980eb2c89f738371926b5e95ef062600b2e908892c39ece1
+[I 10:31:08.291 NotebookApp] 302 GET /?token=980eb2c89f738371926b5e95ef062600b2e908892c39ece1%0A (127.0.0.1) 0.610000ms
+[I 10:31:35.227 NotebookApp] Kernel started: 9b0d5987-ba89-4589-bacd-d10fb1fb8d84, name: python3
+[I 10:43:35.219 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 10:45:35.225 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 10:54:34.285 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 10:55:07.917 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 10:56:55.345 NotebookApp] Starting buffering for 9b0d5987-ba89-4589-bacd-d10fb1fb8d84:3406807edf2f467684823717cfae721c
+[I 10:56:56.069 NotebookApp] Kernel restarted: 9b0d5987-ba89-4589-bacd-d10fb1fb8d84
+[I 10:56:56.105 NotebookApp] Restoring connection for 9b0d5987-ba89-4589-bacd-d10fb1fb8d84:3406807edf2f467684823717cfae721c
+[I 10:56:56.510 NotebookApp] Replaying 3 buffered messages
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/cache.py", line 109, in wrapper
+    return dct[key]
+KeyError: ((), frozenset())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 268, in dispatch_shell
+    yield gen.maybe_future(handler(stream, idents, msg))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+    yielded = ctx_run(next, result)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 583, in complete_request
+    matches = yield gen.maybe_future(self.do_complete(code, cursor_pos))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 360, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 385, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 492, in rectify_completions
+    completions = list(completions)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1837, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1894, in _completions
+    signature = _make_signature(jm)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1001, in _make_signature
+    signatures = completion.get_signatures()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 572, in get_signatures
+    for s in self._get_signatures()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 561, in _get_signatures
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 561, in <listcomp>
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/cache.py", line 111, in wrapper
+    result = method(self, *args, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 129, in infer
+    return _create(self._inference_state, compiled_value, module_context)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/cache.py", line 43, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 257, in _create
+    result = _find_syntax_node_name(inference_state, python_object)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 237, in _find_syntax_node_name
+    code_lines = get_cached_code_lines(inference_state.grammar, path)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/parser_utils.py", line 280, in get_cached_code_lines
+    return parser_cache[grammar._hashed][path].lines
+KeyError: '/scratch/oem214/vanilla-rtrl/cluster/submit_jobs.py'
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/cache.py", line 109, in wrapper
+    return dct[key]
+KeyError: ((), frozenset())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 268, in dispatch_shell
+    yield gen.maybe_future(handler(stream, idents, msg))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+    yielded = ctx_run(next, result)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 583, in complete_request
+    matches = yield gen.maybe_future(self.do_complete(code, cursor_pos))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 360, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 385, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 492, in rectify_completions
+    completions = list(completions)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1837, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1894, in _completions
+    signature = _make_signature(jm)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1001, in _make_signature
+    signatures = completion.get_signatures()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 572, in get_signatures
+    for s in self._get_signatures()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 561, in _get_signatures
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 561, in <listcomp>
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/cache.py", line 111, in wrapper
+    result = method(self, *args, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 129, in infer
+    return _create(self._inference_state, compiled_value, module_context)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/cache.py", line 43, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 257, in _create
+    result = _find_syntax_node_name(inference_state, python_object)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 237, in _find_syntax_node_name
+    code_lines = get_cached_code_lines(inference_state.grammar, path)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/parser_utils.py", line 280, in get_cached_code_lines
+    return parser_cache[grammar._hashed][path].lines
+KeyError: '/scratch/oem214/vanilla-rtrl/cluster/submit_jobs.py'
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/cache.py", line 109, in wrapper
+    return dct[key]
+KeyError: ((), frozenset())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 268, in dispatch_shell
+    yield gen.maybe_future(handler(stream, idents, msg))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+    yielded = ctx_run(next, result)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 583, in complete_request
+    matches = yield gen.maybe_future(self.do_complete(code, cursor_pos))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 360, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 385, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 492, in rectify_completions
+    completions = list(completions)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1837, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1894, in _completions
+    signature = _make_signature(jm)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1001, in _make_signature
+    signatures = completion.get_signatures()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 572, in get_signatures
+    for s in self._get_signatures()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 561, in _get_signatures
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 561, in <listcomp>
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/cache.py", line 111, in wrapper
+    result = method(self, *args, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 129, in infer
+    return _create(self._inference_state, compiled_value, module_context)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/cache.py", line 43, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 257, in _create
+    result = _find_syntax_node_name(inference_state, python_object)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 237, in _find_syntax_node_name
+    code_lines = get_cached_code_lines(inference_state.grammar, path)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/parser_utils.py", line 280, in get_cached_code_lines
+    return parser_cache[grammar._hashed][path].lines
+KeyError: '/scratch/oem214/vanilla-rtrl/cluster/submit_jobs.py'
+[I 10:57:07.914 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 10:58:06.614 NotebookApp] Starting buffering for 9b0d5987-ba89-4589-bacd-d10fb1fb8d84:3406807edf2f467684823717cfae721c
+[I 10:58:07.239 NotebookApp] Kernel restarted: 9b0d5987-ba89-4589-bacd-d10fb1fb8d84
+[I 10:58:07.369 NotebookApp] Restoring connection for 9b0d5987-ba89-4589-bacd-d10fb1fb8d84:3406807edf2f467684823717cfae721c
+[I 10:58:07.619 NotebookApp] Replaying 3 buffered messages
+[I 10:59:07.919 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:02:49.683 NotebookApp] Starting buffering for 9b0d5987-ba89-4589-bacd-d10fb1fb8d84:3406807edf2f467684823717cfae721c
+[I 11:02:50.214 NotebookApp] Kernel restarted: 9b0d5987-ba89-4589-bacd-d10fb1fb8d84
+[I 11:02:50.307 NotebookApp] Restoring connection for 9b0d5987-ba89-4589-bacd-d10fb1fb8d84:3406807edf2f467684823717cfae721c
+[I 11:02:50.810 NotebookApp] Replaying 3 buffered messages
+[I 11:03:07.918 NotebookApp] Saving file at /pipeline_test.ipynb
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/cache.py", line 109, in wrapper
+    return dct[key]
+KeyError: ((), frozenset())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 268, in dispatch_shell
+    yield gen.maybe_future(handler(stream, idents, msg))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+    yielded = ctx_run(next, result)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 583, in complete_request
+    matches = yield gen.maybe_future(self.do_complete(code, cursor_pos))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 360, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 385, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 492, in rectify_completions
+    completions = list(completions)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1837, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1894, in _completions
+    signature = _make_signature(jm)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1001, in _make_signature
+    signatures = completion.get_signatures()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 572, in get_signatures
+    for s in self._get_signatures()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 561, in _get_signatures
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 561, in <listcomp>
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/cache.py", line 111, in wrapper
+    result = method(self, *args, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 129, in infer
+    return _create(self._inference_state, compiled_value, module_context)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/cache.py", line 43, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 257, in _create
+    result = _find_syntax_node_name(inference_state, python_object)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 237, in _find_syntax_node_name
+    code_lines = get_cached_code_lines(inference_state.grammar, path)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/parser_utils.py", line 280, in get_cached_code_lines
+    return parser_cache[grammar._hashed][path].lines
+KeyError: '/scratch/oem214/vanilla-rtrl/utils/programming_tools.py'
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/cache.py", line 109, in wrapper
+    return dct[key]
+KeyError: ((), frozenset())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 268, in dispatch_shell
+    yield gen.maybe_future(handler(stream, idents, msg))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+    yielded = ctx_run(next, result)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 583, in complete_request
+    matches = yield gen.maybe_future(self.do_complete(code, cursor_pos))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 360, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 385, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 492, in rectify_completions
+    completions = list(completions)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1837, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1894, in _completions
+    signature = _make_signature(jm)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1001, in _make_signature
+    signatures = completion.get_signatures()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 572, in get_signatures
+    for s in self._get_signatures()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 561, in _get_signatures
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 561, in <listcomp>
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/cache.py", line 111, in wrapper
+    result = method(self, *args, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 129, in infer
+    return _create(self._inference_state, compiled_value, module_context)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/cache.py", line 43, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 257, in _create
+    result = _find_syntax_node_name(inference_state, python_object)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 237, in _find_syntax_node_name
+    code_lines = get_cached_code_lines(inference_state.grammar, path)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/parser_utils.py", line 280, in get_cached_code_lines
+    return parser_cache[grammar._hashed][path].lines
+KeyError: '/scratch/oem214/vanilla-rtrl/utils/programming_tools.py'
+[IPKernelApp] ERROR | Exception in message handler:
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/cache.py", line 109, in wrapper
+    return dct[key]
+KeyError: ((), frozenset())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 268, in dispatch_shell
+    yield gen.maybe_future(handler(stream, idents, msg))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/tornado/gen.py", line 234, in wrapper
+    yielded = ctx_run(next, result)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/kernelbase.py", line 583, in complete_request
+    matches = yield gen.maybe_future(self.do_complete(code, cursor_pos))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 360, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/ipykernel/ipkernel.py", line 385, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 492, in rectify_completions
+    completions = list(completions)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1837, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1894, in _completions
+    signature = _make_signature(jm)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/IPython/core/completer.py", line 1001, in _make_signature
+    signatures = completion.get_signatures()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 572, in get_signatures
+    for s in self._get_signatures()
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 561, in _get_signatures
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/api/classes.py", line 561, in <listcomp>
+    return [sig for name in names for sig in name.infer().get_signatures()]
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/cache.py", line 111, in wrapper
+    result = method(self, *args, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 129, in infer
+    return _create(self._inference_state, compiled_value, module_context)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/cache.py", line 43, in wrapper
+    rv = function(obj, *args, **kwargs)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 257, in _create
+    result = _find_syntax_node_name(inference_state, python_object)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/inference/compiled/mixed.py", line 237, in _find_syntax_node_name
+    code_lines = get_cached_code_lines(inference_state.grammar, path)
+  File "/ext3/miniconda3/lib/python3.8/site-packages/jedi/parser_utils.py", line 280, in get_cached_code_lines
+    return parser_cache[grammar._hashed][path].lines
+KeyError: '/scratch/oem214/vanilla-rtrl/utils/programming_tools.py'
+[I 11:05:07.927 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:07:07.924 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:18:26.022 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:19:13.655 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:21:13.654 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:23:13.660 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:25:03.886 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:25:13.655 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:27:13.667 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:33:23.583 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:33:49.239 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:34:54.028 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:35:49.243 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:36:06.406 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:37:49.271 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:39:49.250 NotebookApp] Saving file at /pipeline_test.ipynb
+[I 11:44:16.130 NotebookApp] Saving file at /pipeline_test.ipynb
