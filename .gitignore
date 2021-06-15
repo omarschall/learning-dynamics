@@ -2,3 +2,4 @@ logs/
 results/
 job_scripts/
 cluster_main_scripts/
+jupyter_notebook/jupyter.o
